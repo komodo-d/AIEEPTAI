@@ -1,7 +1,11 @@
 # AIEEPTAI
 PRO301-643-225031-ONL-TALLER DE APLICACIONES PARA INTERNET
 
+<<<<<<< HEAD
 Semana 2 
+=======
+Semana 2
+>>>>>>> 5f7f964c6c85388b14393e71a46ded590815e70b
 1.	Portada con título del periódico “El Faro” y su logotipo (usar alguna imagen de referencia)
 2.	Menú con las siguientes opciones
 a.	Inicio
