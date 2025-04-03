@@ -6,6 +6,7 @@
     <title>El Faro - Noticias</title>
     <link rel="icon" href="img/faro.png" type="image/png">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Portada -->
@@ -27,34 +28,44 @@
     <!-- Sección de Artículos -->
     <section class="articulos">
         <h2>General</h2>
-        <table>
-            <tr>
-                <th>Imagen</th>
-                <th>Título</th>
-                <th>Categoría</th>
-                <th>Descripción</th>
-            </tr>
-            <tr>
-                <td><img src="img/portada_noticia/general1.png" class="news-img"></td>
-                <td>
-                    <a href="noticia1.html">Experta lo demuestra con "The Office": el truco para pasar tus fotos al estilo Studio Ghibli</a>
-                </td>
-                <td><div class="categoria general">General</div></td>
-                <td>En los últimos días, cientos o miles de fotos al más puro Studio Ghibli han inundado las redes sociales...</td>
-            </tr>
-            <tr>
-                <td><img src="img/portada_noticia/general2.jpg" class="news-img"></td>
-                <td>Qué significa que a mi árbol de jade se le caigan las hojas</td>
-                <td><div class="categoria general">General</div</td>
-                <td>La crassula ovata, más conocida como el árbol de jade, es una planta suculenta originaria de Mozambique...</td>
-            </tr>
-            <tr>
-                <td><img src="img/portada_noticia/general3.jpg" class="news-img"></td>
-                <td>¿Guerra de precios?: Así funciona Petroprix, bencinera que llegará a Chile</td>
-                <td><div class="categoria general">General</div></td>
-                <td>Petroprix, una bencinera española “low cost”, se instalará en Chile con al menos 50 estaciones de servicio...</td>
-            </tr>
-        </table>
+        <div class="card-container">
+            <div class="card">
+                <img src="img/portada_noticia/general1.png" class="news-img" alt="Imagen noticia 1">
+                <div class="card-content">
+                    <a href="noticia1.html">
+                        <h3>Experta lo demuestra con "The Office": el truco para pasar tus fotos al estilo Studio Ghibli</h3>
+                    </a>
+                    <div class="categoria general">General</div>
+                    <p>En los últimos días, cientos o miles de fotos al más puro Studio Ghibli han inundado las redes sociales...</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/portada_noticia/general2.jpg" class="news-img" alt="Imagen noticia 2">
+                <div class="card-content">
+                    <a href="noticia2.html">
+                        <h3>Qué significa que a mi árbol de jade se le caigan las hojas</h3>
+                    </a>
+                    <div class="categoria general">General</div>
+                    <p>La crassula ovata, más conocida como el árbol de jade, es una planta suculenta originaria de Mozambique...</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/portada_noticia/general3.jpg" class="news-img" alt="Imagen noticia 3">
+                <div class="card-content">
+                    <a href="noticia3.html">
+                        <h3>¿Guerra de precios?: Así funciona Petroprix, bencinera que llegará a Chile</h3>
+                    </a>
+                    <div class="categoria general">General</div>
+                    <p>Petroprix, una bencinera española “low cost”, se instalará en Chile con al menos 50 estaciones de servicio...</p>
+                </div>
+            </div>
+        </div>
     </section>
+    <footer>
+        <div class="footer-content">
+            <p>Derechos de autor &copy; 2025 David ZG & Claudio ZC</p>
+            <p>Hecho con ☕ y 💗.
+    </footer>
+    
 </body>
 </html>
