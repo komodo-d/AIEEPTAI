@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Noticia - El Faro</title>
+    <link rel="icon" href="img/faro.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="img/faro.png" alt="El Faro Logotipo"></a>
+        </div>
+        <h1>El Faro</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="categoria.html?categoria=general">General</a></li>
+            <li><a href="categoria.html?categoria=deporte">Deporte</a></li>
+            <li><a href="categoria.html?categoria=negocios">Negocios</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="crear_noticia.html">Crear Noticia</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h2>Crear Nueva Noticia</h2>
+        <form id="formulario-noticia">
+            <label for="titulo">Título</label>
+            <input type="text" id="titulo" name="titulo" required>
+
+            <label for="categoria">Categoría</label>
+            <select id="categoria" name="categoria" required>
+                <option value="">Seleccione una categoría</option>
+                <option value="general">General</option>
+                <option value="negocios">Negocios</option>
+                <option value="deporte">Deporte</option>
+            </select>
+
+            <label for="resumen">Resumen</label>
+            <textarea id="resumen" name="resumen" rows="3" required></textarea>
+
+            <label for="contenido">Contenido Completo</label>
+            <textarea id="contenido" name="contenido" rows="8" required></textarea>
+
+            <!-- Opcionalmente se puede agregar un input de imagen -->
+            <label for="imagen">Imagen de portada (URL o nombre del archivo)</label>
+            <input type="text" id="imagen" name="imagen" placeholder="img/portada_noticia/miimagen.jpg">
+
+            <button type="submit">Guardar Noticia</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>Derechos de autor © 2025 David ZG & Claudio ZC</p>
+            <p>Hecho con ☕ y ♥</p>
+        </div>
+    </footer>
+
+    <script src="js/crear_noticia.js"></script>
+</body>
+</html>

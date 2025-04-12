@@ -9,6 +9,7 @@ body {
 }
 
 header {
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,6 +17,26 @@ header {
     color: white;
     text-align: center;
     padding: 20px;
+}
+
+.header-section {
+    flex: 1;
+    height: 100%;
+    position: relative;
+}
+
+ .derecha {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 10px;
+}
+
+.header-section .reloj{
+    font-size: 14px;
+    color: #ecf0f1; 
+    margin-bottom: 10px;
+    font-family: 'Noticia Text', serif;
 }
 
 header img {
@@ -95,13 +116,29 @@ h2 {
     background-color: #2ecc71;
 }
 
+.titulo-categoria {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+  }
+  
+  .titulo-categoria a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .titulo-categoria a:hover {
+    color: #3498db;
+  }
+
 
 /* Estilo para las tarjetas */
 .card-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 10px;
     justify-content: space-between;
+    padding: 10px;  /* Añadido padding al contenedor de las cards */
 }
 
 /* Configuración de las tarjetas */
@@ -112,6 +149,8 @@ h2 {
     width: 30%;
     overflow: hidden;
     transition: transform 0.3s ease-in-out, background-color 0.3s, color 0.3s;
+    padding: 15px;  /* Añadido padding dentro de la card */
+    box-sizing: border-box; /* Asegura que el padding se considere dentro del ancho de la tarjeta */
 }
 
 /* Efecto hover */
@@ -193,6 +232,7 @@ h2 {
     }
 }
 
+
 footer {
     box-sizing: border-box;
     background-color: #c9d2d0;
@@ -209,4 +249,51 @@ footer {
 .footer-content p {
     margin: 5px;
     font-size: 14px;
+}
+
+/* Estilos para el formulario de contacto */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-weight: bold;
+    color: #2c3e50;
+    font-size: 16px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: inherit;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+    outline: none;
+}
+
+form button[type="submit"] {
+    background-color: #2c3e50;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+    background-color: #34495e;
 }

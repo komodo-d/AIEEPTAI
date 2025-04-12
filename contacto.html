@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>El Faro - Noticias</title>
+    <title>Noticia - El Faro</title>
     <link rel="icon" href="img/faro.png" type="image/png">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div class="header-section">
+        <div class="logo">
             <img src="img/faro.png" alt="El Faro Logotipo">
-            <h1>El Faro</h1>
         </div>
+        <h1>El Faro</h1>
     </header>
-
     <nav>
         <ul>
             <li><a href="index.html">Inicio</a></li>
@@ -25,18 +25,26 @@
             <li><a href="crear_noticia.html">Crear Noticia</a></li>
         </ul>
     </nav>
+    <section>
+        <h2>Contacto</h2>
+        <form action="enviar_mensaje.php" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
 
-    <!-- Contenedor de Noticias por Categoría -->
-     
-    <div id="contenedor-categorias"></div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
     <footer>
         <div class="footer-content">
             <p>Derechos de autor &copy; 2025 David ZG & Claudio ZC</p>
             <p>Hecho con ☕ y ♥</p>
         </div>
     </footer>
-    <script src="/js/main.js"></script>
-    <script src="js/noticias.js"></script> <!-- Este script se encargará de mostrar las noticias -->
 </body>
 </html>

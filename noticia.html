@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>El Faro - Noticias</title>
+    <title>Noticia - El Faro</title>
     <link rel="icon" href="img/faro.png" type="image/png">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -18,17 +18,16 @@
     <nav>
         <ul>
             <li><a href="index.html">Inicio</a></li>
-            <li><a href="categoria.html?categoria=general">General</a></li>
-            <li><a href="categoria.html?categoria=deporte">Deporte</a></li>
-            <li><a href="categoria.html?categoria=negocios">Negocios</a></li>
+            <li><a href="general.html">General</a></li>
+            <li><a href="deportes.html">Deporte</a></li>
+            <li><a href="negocios.html">Negocios</a></li>
             <li><a href="contacto.html">Contacto</a></li>
-            <li><a href="crear_noticia.html">Crear Noticia</a></li>
         </ul>
     </nav>
 
-    <!-- Contenedor de Noticias por Categoría -->
-     
-    <div id="contenedor-categorias"></div>
+    <div id="noticia-detalle">
+        <!-- Aquí se cargará el contenido de la noticia -->
+    </div>
 
     <footer>
         <div class="footer-content">
@@ -36,7 +35,7 @@
             <p>Hecho con ☕ y ♥</p>
         </div>
     </footer>
-    <script src="/js/main.js"></script>
-    <script src="js/noticias.js"></script> <!-- Este script se encargará de mostrar las noticias -->
+
+    <script src="js/noticias.js"></script> <!-- Este JS se encargará de cargar la noticia completa -->
 </body>
 </html>
