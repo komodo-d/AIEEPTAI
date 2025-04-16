@@ -25,6 +25,18 @@ header {
     position: relative;
 }
 
+.izquierda {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px;
+}
+.centro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
  .derecha {
     display: flex;
     justify-content: flex-end;
