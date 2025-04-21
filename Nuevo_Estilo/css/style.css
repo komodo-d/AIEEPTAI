@@ -1,0 +1,49 @@
+/* /assets/style.css */
+:root {
+    --color-principal: #2c3e50;
+  }
+  
+  body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .bg-principal {
+    background-color: var(--color-principal) !important;
+  }
+  
+  .text-principal {
+    color: var(--color-principal) !important;
+  }
+  
+  .btn-principal {
+    background-color: var(--color-principal);
+    color: white;
+    border: none;
+  }
+  
+  .btn-principal:hover {
+    background-color: #1a252f;
+  }
+  
+  footer {
+    background-color: var(--color-principal);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .navbar-brand img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .content {
+    flex: 1;
+  }
+  

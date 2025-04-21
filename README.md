@@ -61,3 +61,29 @@ Notas:
 ●	Se espera mantener Layouts con CSS.
 ●	Se espera mantener estilos actuales con nuevos elementos.
 
+
+Semana 5
+
+Ha pasado tiempo y el sitio de “El Faro” ha decidido hacer un nuevo cambio en apariencias. Para esto ha entregado una serie de necesidades:
+●	Nueva estética más moderna.
+●	Secciones mejor organizadas.
+●	Acceso a otras secciones separadas del menú.
+●	Vista de artículos más recientes de manera destacada.
+●	Vista de otros artículos también en pantalla, pero más chicos.
+●	Un footer mas grande.
+●	Sección superior de avisos.
+
+Importante:
+●	La propuesta de mejora debe realizarse con un Framework UI como Bulma o Bootstrap.
+●	Los requisitos deben describirse en Casos de Uso y en tablas descriptivas.
+
+Para lo anterior, se debe generar lo siguiente:
+1.	Documentación de requisitos:
+a.	Listar los requisitos de manera codificada
+b.	Casos de uso
+c.	Tablas de detalle de casos de uso
+2.	Documentar el proceso de cambio y elementos o componentes utilizados.
+a.	Debe resolver las necesidades entregadas.
+b.	Debe considerar todos los elementos del sitio.
+
+Se espera mantener la responsividad del sitio.
