@@ -86,4 +86,28 @@ c.	Tablas de detalle de casos de uso
 a.	Debe resolver las necesidades entregadas.
 b.	Debe considerar todos los elementos del sitio.
 
+Semana 6
+
 Se espera mantener la responsividad del sitio.
+
+En base al caso trabajado en semanas anteriores, el sitio web “El Faro” requiere potenciar sus capacidades a nivel transaccional y debe implementar capacidades de servidor para gestión de cuentas de usuario. El objetivo es conseguir suscripciones y más adelante planes para acceder al diario virtual.
+
+En concreto, se requiere lo siguiente:
+1.	Identificar las entidades que participan del sitio, agregando al usuario o lector.
+2.	Construir en base al modelo MVC las clases de las nuevas entidades
+3.	Construir en base al modelo MVC las vistas del sitio
+4.	Mantener uso de Framework UI
+5.	Construir Vista, Controlador y Modelo para procesar los datos de un formulario.
+a.	Considerar formulario de contacto
+b.	Considerar un nuevo formulario para registro de cuenta.
+
+Para lo anterior, se debe generar lo siguiente:
+1.	Solo considerar como entidad aquellos objetos importantes que participan del sitio, ejemplo: un usuario, los artículos, otros.
+2.	Se debe mantener el uso de Framework UI ahora en base a la arquitectura MVC.
+a.	Considerar migración de archivos HTML a PHP
+b.	Considerar uso del Framework en los archivos PHP de la Vista.
+3.	Mantener la responsividad del sitio.
+4.	Usar un Framework PHP es optativo. Se sugiere alguno de los tres siguientes Frameworks, solo en caso de querer utilizar alguno.
+a.	Laravel
+b.	Codeigniter
+c.	CakePHP
