@@ -1,0 +1,21 @@
+# Disable directory browsing
+Options -Indexes
+
+# Enable mod_rewrite
+<IfModule mod_rewrite.c>
+    Options +FollowSymlinks
+    RewriteEngine On
+
+    # Base path (ajusta según la ruta de tu proyecto)
+    RewriteBase /elfaro/codeigniter/public/
+
+    # Remove index.php from URLs
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ index.php/$1 [L]
+</IfModule>
+
+<IfModule !mod_rewrite.c>
+    # Si mod_rewrite no está habilitado, se redirigen todos los errores 404 a index.php
+    ErrorDocument 404 index.php
+</IfModule>
