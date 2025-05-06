@@ -129,7 +129,7 @@ form button[type="submit"]:hover {
           <li class="nav-item"><a class="nav-link" href="<?= site_url('/categoria/deporte'); ?>">Deporte</a></li>
           <li class="nav-item"><a class="nav-link" href="<?= site_url('/categoria/negocios'); ?>">Negocios</a></li>
           <li class="nav-item"><a class="nav-link" href="<?= site_url('/contacto'); ?>">Contacto</a></li>
-          <li class="nav-item"><a class="nav-link" href="<?= site_url('/crear_noticia'); ?>">Crear Noticia</a></li>
+          <li class="nav-item"><a class="nav-link" href="<?= site_url('/crear_articulo'); ?>">Crear Articulo</a></li>
           <li class="nav-item"><a class="nav-link" href="<?= site_url('/registro'); ?>">Registro</a></li>
         </ul>
       </div>

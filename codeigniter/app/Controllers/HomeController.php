@@ -1,13 +1,20 @@
 <?php
 
+// app/Controllers/HomeController.php
+
 namespace App\Controllers;
 
-use CodeIgniter\Controller;
+use App\Models\ArticuloModel;
 
-class HomeController extends Controller
+class HomeController extends BaseController
 {
     public function index()
     {
-        return view('home');  // Llama la vista 'home' sin la extensión .php
+        $model = new ArticuloModel();
+        $articulos = $model->orderBy('id_articulo', 'DESC')->findAll();
+
+
+        echo view('home', ['articulos' => $articulos]);
+
     }
 }
