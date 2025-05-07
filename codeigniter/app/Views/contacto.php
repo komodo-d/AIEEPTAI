@@ -1,6 +1,6 @@
 <section>
         <h2>Contacto</h2>
-        <form action="enviar_mensaje.php" method="POST">
+        <form action="<?= site_url('guardar_contacto') ?>" method="POST">
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre" required>
 

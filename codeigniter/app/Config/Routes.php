@@ -14,6 +14,11 @@ use CodeIgniter\Router\RouteCollection;
  $routes->get('crear_articulo', 'ArticuloController::crear');
  $routes->post('guardar_articulo', 'ArticuloController::guardar');
  $routes->get('noticia/(:segment)', 'NoticiaController::show/$1');  // Página de noticia individual
+ $routes->post('guardar_contacto', 'ContactoController::guardar');
+ $routes->get('listar_contactos', 'ContactoController::listar');
+
+
+
 
  
 
